@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <title>getElementById</title>
+
+</head>
+
+<body>
+
+    <input value="Nikolay" class="first_name_input" id="first_name">
+    <input value="Hotim" class="last_name_input" id="last_name">
+    <input value="Grodno_city" class="address_input" id="address">
+
+    <select id="cities">
+        <option>Brest</option>
+        <option>Gomel</option>
+        <option selected>Grodno</option>
+        <option>Minsk</option>
+        <option>Mogilev</option>
+        <option>Vitebsk</option>
+    </select>
+
+    <textarea id="hobbies">HTML, CSS, JS</textarea>
+
+    <div id="avatar_wrapper">
+        <img id="avatar" src="https://sun1.beltelecom-by-minsk.userapi.com/s/v1/ig2/IoNrUUB4tP7naZK1kNlPXuFPwv9sXIUFuVSrskzUcpRWprodgAhUvd109y-03BVSqL9FXBjvqFkm3w5szkLfzlTa.jpg?size=200x0&quality=95&crop=0,0,1620,2160&ava=1" alt="Аватар">
+    </div>
+
+    <script>
+        var firstNameId = "first_name";
+        var firstNameEl = document.getElementById(firstNameId);
+        var lastNameId = "last_name";
+        var lastNameEl = document.getElementById(lastNameId);
+        var addressId = "address";
+        var addressEl = document.getElementById(addressId);
+        var citiesId = "cities";
+        var citiesEl = document.getElementById(citiesId);
+        var hobbiesId = "hobbies";
+        var hobbiesEl = document.getElementById(hobbiesId);
+        var avatarWrapperId = "avatar_wrapper";
+        var avatarWrapperEl = document.getElementById(avatarWrapperId);
+        var avatarId = "avatar";
+        var avatarEl = document.getElementById(avatarId);
+
+        alert(avatarEl.alt);
+    </script>
+
+</body>
+
+</html>
