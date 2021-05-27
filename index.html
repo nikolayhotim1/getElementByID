@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <title>getElementById</title>
 
@@ -13,9 +13,9 @@
 
     <input value="Nikolay" title="your first name" class="first_name_input default_input" id="first_name">
     <input value="Hotim" title="your last name" class="last_name_input default_input" id="last_name">
-    <input value="Grodno_city" title="your address" class="address_input default_input" id="address">
+    <input value="Grodno city" title="your address" class="address_input default_input" id="address">
 
-    <select id="cities">
+    <select title="your city" id="cities">
         <option>Brest</option>
         <option>Gomel</option>
         <option selected>Grodno</option>
@@ -27,7 +27,9 @@
     <textarea title="your hobbies" id="hobbies">HTML, CSS, JS</textarea>
 
     <div id="avatar_wrapper">
-        <img id="avatar" src="https://sun1.beltelecom-by-minsk.userapi.com/s/v1/ig2/IoNrUUB4tP7naZK1kNlPXuFPwv9sXIUFuVSrskzUcpRWprodgAhUvd109y-03BVSqL9FXBjvqFkm3w5szkLfzlTa.jpg?size=200x0&quality=95&crop=0,0,1620,2160&ava=1" alt="Аватар">
+        <img id="avatar"
+            src="https://sun1.beltelecom-by-minsk.userapi.com/s/v1/ig2/IoNrUUB4tP7naZK1kNlPXuFPwv9sXIUFuVSrskzUcpRWprodgAhUvd109y-03BVSqL9FXBjvqFkm3w5szkLfzlTa.jpg?size=200x0&quality=95&crop=0,0,1620,2160&ava=1"
+            alt="Аватар">
     </div>
 
     <script>
@@ -46,7 +48,7 @@
         var avatarWrapperEl = document.getElementById(avatarWrapperId);
         var avatarId = "avatar";
         var avatarEl = document.getElementById(avatarId);
-             
+
         firstNameEl.value = "Matvey";
         lastNameEl.className = "last_name_input default_input error_input";
         lastNameEl.title = "Wrong last name";
@@ -57,24 +59,25 @@
         avatarWrapperEl.innerHTML = "<ul id=\"list\"><li>1</li><li>2</li><li>3</li></ul>";
         
         var listId = "list";
-        var numberListEl = document.getElementById(listId);
+        var listEl = document.getElementById(listId);
 
-        alert(numberListEl.innerHTML);
+        alert(listEl.innerHTML);
+    </script>
 
-        </script>
+    <style>
+        .default_input {
+            border: green 5px solid;
+            padding: 5px;
+        }
 
-        <style>
-            
-            .default_input {
-                border: green 5px solid;
-                padding: 5px;
-            }
-        
-            .error_input {
-                border-color: red;
-            }
+        .error_input {
+            border-color: red;
+        }
 
-        </style>
+        #avatar {
+            width: 624px;
+        }
+    </style>
 
 </body>
 
