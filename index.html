@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>getElementById</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -27,53 +28,7 @@
             src="https://sun1.beltelecom-by-minsk.userapi.com/s/v1/ig2/IoNrUUB4tP7naZK1kNlPXuFPwv9sXIUFuVSrskzUcpRWprodgAhUvd109y-03BVSqL9FXBjvqFkm3w5szkLfzlTa.jpg?size=200x0&quality=95&crop=0,0,1620,2160&ava=1"
             alt="Аватар">
     </div>
-
-    <script>
-        // create elements by id
-        var firstNameId = "first_name";
-        var firstNameEl = document.getElementById(firstNameId);
-        var lastNameId = "last_name";
-        var lastNameEl = document.getElementById(lastNameId);
-        var addressId = "address";
-        var addressEl = document.getElementById(addressId);
-        var citiesId = "cities";
-        var citiesEl = document.getElementById(citiesId);
-        var hobbiesId = "hobbies";
-        var hobbiesEl = document.getElementById(hobbiesId);
-        var avatarWrapperId = "avatar_wrapper";
-        var avatarWrapperEl = document.getElementById(avatarWrapperId);
-        var avatarId = "avatar";
-        var avatarEl = document.getElementById(avatarId);
-
-        firstNameEl.value = "Matvey";
-        lastNameEl.className = "last_name_input default_input error_input";
-        lastNameEl.title = "Wrong last name";
-        avatarEl.src = "img/4.jpg";
-        avatarEl.title = "I am avatar";
-        citiesEl.value = "Minsk";
-        hobbiesEl.value = "Toys, bathing, cars";
-        avatarWrapperEl.innerHTML = "<ul id=\"list\"><li>1</li><li>2</li><li>3</li></ul>";
-        
-        var listId = "list";
-        var listEl = document.getElementById(listId);
-
-        alert(listEl.innerHTML);
-    </script>
-
-    <style>
-        .default_input {
-            border: green 5px solid;
-            padding: 5px;
-        }
-
-        .error_input {
-            border-color: red;
-        }
-
-        #avatar {
-            width: 624px;
-        }
-    </style>
+    <script src="JS/main.js"></script>`
 </body>
 
 </html>
